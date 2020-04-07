@@ -4,6 +4,7 @@ const Intern = require("./lib/Intern");
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
+const fsPromises = require("fs").promises;
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 const render = require("./lib/htmlRenderer");
@@ -42,10 +43,19 @@ function createTeamPage() {
     // use employee array to build web page
     const html = render(employeeArr);
 
-    // write templates/team.html
-    fs.writeFile("templates/team.html", html, function (err) {
+    // make sure /output exists
+    (async () => {
+        await fsPromises.mkdir(OUTPUT_DIR, {
+          recursive: true, // recursive to true means pre-existence of the folder will not cause issues
+          mode: 0o777
+        });
+        console.log(`${OUTPUT_DIR} created!`);
+      })();
+
+    // write output/team.html
+    fs.writeFile(outputPath, html, function (err) {
         if (err) throw err;
-        console.log('Saved!');
+        console.log(`${outputPath} saved!`);
     });
 }
 
