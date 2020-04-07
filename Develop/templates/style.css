@@ -1,0 +1,35 @@
+a {
+    color:  rgb(221, 150, 221);
+}
+
+a:hover {
+    color: purple;
+}
+
+.card-body{
+    background: rgb(240, 220, 240);
+}
+
+.fas{
+    background: rgb(240, 220, 240);
+}
+
+.fa-mug-hot{
+    color: purple;
+}
+
+.fa-glasses{
+    color: purple;
+}
+
+.fa-user-graduate{
+    color: purple;
+}
+
+.jumbotron{
+    background: linear-gradient(to bottom right, purple, rgb(221, 150, 221), rgb(240, 220, 240));
+}
+
+.list-group-item{
+    color: purple;
+}
