@@ -27,7 +27,15 @@ This is a command line application, no url applies.
 
 ### Usage
 ```
-Start the application with the terminal command "node app.js".n Select team member position of Manager, Engineer or Intern and answer the questions that follow. Repeat this process by selecting "Y" when prompted for further entires, otherwise enter "n" to quit. Upon exiting the questionnaire, the application will create a team.html page in the output folder. Copy/Move this file as desired.    
+Start the application with the terminal command "node app.js".
+
+Select team member position of Manager, Engineer or Intern and answer the questions that follow. 
+
+Repeat this process by selecting "Y" when prompted for further entires, otherwise enter "n" to quit. 
+
+Upon exiting the questionnaire, the application will create a team.html page in the output folder. 
+
+Copy/Move this file as desired.    
 ```
 
 ### License
