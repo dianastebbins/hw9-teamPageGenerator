@@ -8,7 +8,7 @@
 
 ## Project Description
 ```
-User of the application completes a short questionnaire per employee/team member.
+User of the application completes a short questionnaire per employee/team member. Application then creates a "team.html" page that can be opened in  a browser (this is a command line application, no url applies)
 ```
 
 ## Table of Contents
